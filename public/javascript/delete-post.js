@@ -1,6 +1,6 @@
 async function deleteFormHandler(event) {
     event.preventDefault();
-
+    // split on the screen where the post needs to deleted
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
       ];
