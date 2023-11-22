@@ -1,5 +1,10 @@
 // import the Sequelize constructor from the library
+
 const Sequelize = require('sequelize');
+
+const port = process.env.PORT || 3001;
+const nodeEnv = process.env.NODE_ENV || 'development';
+
 
 require('dotenv').config();
 const sequelize = new Sequelize(
